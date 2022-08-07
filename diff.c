@@ -29,10 +29,10 @@ float input4()
     scanf("%f",&d);
     return d;
 }
-float difference(float a, float b, float c, float d );
+float difference(float a, float b, float c, float d )
 {
     float diff;
-    diff=sqrt((c-a)^2+(d-b)^2);
+    diff=sqrt(((c-a)*(c-a))+((d-b)*(d-b)));
     return diff;
 }
 void output(float a, float b, float c, float d, float diff )
@@ -42,7 +42,12 @@ void output(float a, float b, float c, float d, float diff )
 
 int main()
 {
-    
-
+    float a,b,c,d,diff;
+    a=input1();
+    b=input2();
+    c=input3();
+    d=input4();
+    diff=difference(a,b,c,d);
+    output(a,b,c,d,diff);
     return 0;
 }
