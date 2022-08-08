@@ -18,36 +18,36 @@ float input2()
 float input3()
 {
     float c;
-    printf("Enter the x coordinate of point 2(x1): ");
+    printf("Enter the x coordinate of point 2(x2): ");
     scanf("%f",&c);
     return c;
 }
 float input4()
 {
     float d;
-    printf("Enter the y coordinate of point 2(y1): ");
+    printf("Enter the y coordinate of point 2(y2): ");
     scanf("%f",&d);
     return d;
 }
-float difference(float a, float b, float c, float d )
+float distance(float a, float b, float c, float d )
 {
-    float diff;
-    diff=sqrt(((c-a)*(c-a))+((d-b)*(d-b)));
-    return diff;
+    float dist;
+    dist=sqrt(((c-a)*(c-a))+((d-b)*(d-b)));
+    return dist;
 }
-void output(float a, float b, float c, float d, float diff )
+void output(float a, float b, float c, float d, float dist )
 {
-    printf("The difference between points (%f,%f) and (%f,%f) is %f ",a, b, c, d, diff);
+    printf("The distance between points (%f,%f) and (%f,%f) is %f ",a, b, c, d, dist);
 }
 
 int main()
 {
-    float a,b,c,d,diff;
+    float a,b,c,d,dist;
     a=input1();
     b=input2();
     c=input3();
     d=input4();
-    diff=difference(a,b,c,d);
-    output(a,b,c,d,diff);
+    dist=distance(a,b,c,d);
+    output(a,b,c,d,dist);
     return 0;
 }
