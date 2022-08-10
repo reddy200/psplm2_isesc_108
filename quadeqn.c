@@ -94,6 +94,12 @@ int main()
     b=input2();
     c=input3();
     eqn=quadraticequation(a,b,c);
+    r1=root1(a, b, c, eqn);
+    r2=root2(a, b, c, eqn);
+    r3=root3(a, b, c, eqn);
+    r4=root4(a, b, c, eqn);
+    r5=root5(a, b, c, eqn);
+    r6=root6(a, b, c, eqn);
     output(a,b,c,eqn,r1,r2,r3,r4,r5,r6);
     return 0;
 }
